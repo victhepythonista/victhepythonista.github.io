@@ -42,8 +42,8 @@ h1,h2,h3,h4,h5,h6{
 
 
 .section p,div{
-	font-size: clamp(1.1rem, 8vw - 3rem, 1.5rem);
-
+	/*font-size: clamp(1.1rem, 3vw - 2rem, 1.5rem);*/
+	font-size: 2rem;
 }
 
 
@@ -145,5 +145,5 @@ h1,h2,h3,h4,h5,h6{
 
 .about-text{
 	font-family: "Lucida Console", "Courier New", monospace;
-	font-size: small;
+	font-size: medium;
 }

@@ -1,7 +1,7 @@
 
 
 
-$('document').ready(function(){
+$("document").ready(function(){
 
 
 
@@ -11,13 +11,14 @@ $('document').ready(function(){
 
 
 
+var ToggleMobileNavidationDropdown = function(event){
+		$("#mobileNavigationDropdownContent").slideToggle( 200 , function(){} );
 
-var ScrollToSection = function(event){
-	//  A function to auto scroll to a particular section
-	//  To be  used  by a clickable element 
-
-	
 };
+	$("#mobile-navigation-dropdown-toggler").on("click" , ToggleMobileNavidationDropdown );
+
+	$("#mobileNavigationDropdownContent").hide();
 
 
 });
+
