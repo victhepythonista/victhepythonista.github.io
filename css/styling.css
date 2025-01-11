@@ -1,0 +1,149 @@
+
+
+
+
+:root{
+
+	--primary:#E76F0E;
+	--secondary:#0C0E18;
+
+	--black:rgb(37,37,37);
+	--dark-brown:#7A3F13;
+	--orange:#E76F0E;
+
+	--teal-dark:#265073;
+	--teal:#2D9596;
+	--teal-light:#9ad0c2;
+
+
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	
+}
+
+h1,h2,h3,h4,h5,h6{
+
+	color: var(--teal);
+}
+
+/*SECTIONs*/
+.section{
+
+	padding: 3px;
+	background-color:hsla(0.0, 0.0%, 96.1%, 1.0);
+	border-radius: 8px;
+}
+
+
+.section p,div{
+	font-size: clamp(1.1rem, 8vw - 3rem, 1.5rem);
+
+}
+
+
+.section-title{
+	font-weight: bolder;
+	font-size:3rem;
+	text-align: center;
+	border-radius: 8px 8px 0px 0px;
+	background-color: var(--teal-dark);
+	color:white;
+}
+
+
+.section-content-container{
+	padding: 6px;
+
+}
+.subsection-title{
+	text-align: center;
+
+	color:var(--teal-dark);
+	font-weight: bold;
+	border: 2px solid var(--black);
+	color:var(--black);
+}
+
+.contact-section{
+	background-color: var(--teal-dark);
+	color: hsla(0.0, 0.0%, 96.1%, 1.0);
+}
+/*END OF SECTIONS*/
+
+/*navigation BAR STUFF*/
+
+
+.navigation-bar,.mobile-navigation-bar{
+	background-color: var(--black);
+}
+
+.mobile-navigation-bar{
+
+}
+.navigation-bar-button{
+
+	background-color:var(--black);
+	color: white;
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-align: center;
+
+
+}
+
+
+.navigation-bar-button:hover{
+
+	background-color: var(--teal-dark);
+	transform: scale(1.07);
+	border: 4px solid var(--teal);
+	border-width: 0px 0px 4px 0px;
+	text-decoration: none;
+}
+
+.mobile-navigation-dropdown-toggler{
+	color: var(--teal);
+	border:0px solid;
+
+}
+
+/* skill images*/
+
+.skill-image{
+
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+}
+
+
+
+.skill-title{
+	text-align: center;
+}
+
+
+.bottom-note{
+
+	text-align: center;
+	color: hsla(0.0, 0.0%, 96.1%, 1.0);
+	font-weight:light;
+}
+
+.external-link-container{
+
+	color: black;
+	border-radius: 9px;
+	text-align: center;
+}
+
+.about-text{
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: small;
+}
