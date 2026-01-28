@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 auto_update.sh
 venv.sh 
 __pycache__
 venv/
+=======
+*.txt
+old_landing_page.html
+>>>>>>> 3402ace573b292c26f94fc3a18326ae2c9fc973f
