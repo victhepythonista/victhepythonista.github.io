@@ -1,0 +1,107 @@
+
+
+<div class="page-section" id="projects-section">
+	
+	<div class="container">
+	<h2 class="page-title" > Some of my  projects</h2>
+</div>
+<div class="container">
+	<div class="row">
+		
+{% for project in projects %}
+
+	<div class="col-12 col-md-4 p-3 ">
+		<div class="item-card " type="button" data-bs-toggle="modal" data-bs-target="#{{ project.id }}_project_screenshots" >
+			<div class="container p-0">
+				<div class="row justify-content-center">
+
+				<img class="img img-fluid" src="{{ project.banner }}">
+				</div>
+			</div>
+			<div class="row">
+				<div class="item-card-title">{{project.title }}</div>
+
+			</div>
+			<div class="container">
+				<p class="item-card-description">{{ project.short_description }}</p>
+			</div>
+		</div>
+	</div>
+
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="{{ project.id }}_project_screenshots"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bolder" id="exampleModalLabel">{{ project.title }} </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<div class="container  p-5">
+      		<div class="container p-1">
+      			<div class="text-center fw-bold">Technologies used</div>
+      		</div>
+      		<div class="row sub-section justify-content-center">
+
+      			{% for technology in project.technologies_used %}
+      				<div class="col-2 col-md-3 technology"> {{ technology }}</div>
+      			{% endfor %}
+      		</div>
+      	</div>
+        <div class="container">
+        	<p> 
+        		{{ project.short_description }}
+        		{{ project.long_description }} 
+        	</p>
+        </div>
+        {% if project.redirect_url %}
+        <div class="container">
+        	<div class="row justify-content-center">
+        			<button  onclick="window.open('{{ project.redirect_url }}', '_blank');"  class=" btn btn-outline-dark col-6"> <i class="fas fa-code"></i>SOURCE CODE</button>
+        	</div>
+        </div>
+    {% endif %}
+        <div class="container">
+        	
+<div class="container p-2">
+	<div class="row justify-content-center">
+		
+	<div class="row gy-3 gx-3">
+		{%for image in project.screenshots %}
+
+ 
+	 			
+  <img src="{{image}}" class="img img-fluid col-12 col-mb-6" alt="Screenshot of {{project.title}}">
+	 		 
+		 
+		{%endfor%}
+	</div>
+	</div>
+</div>
+
+
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+
+
+
+	</div>
+</div>
+
+
+
+
+	
+</div>

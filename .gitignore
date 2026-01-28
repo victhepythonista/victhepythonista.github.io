@@ -1,0 +1,4 @@
+auto_update.sh
+venv.sh 
+__pycache__
+./venv/

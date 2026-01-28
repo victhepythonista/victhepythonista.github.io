@@ -1,0 +1,236 @@
+
+
+<div class="page-section" id="profile-section">
+	
+
+<!-- BIO SECTION -->
+<div class="section container container " id="bio-section">
+
+		<br>
+
+
+		
+		<div class="container container-fluid sub-section">
+			
+			<div class="row">
+				
+				<div class="col-lg-3 col-sm-12 ">
+					<div class="container">
+						<div class="d-flex justify-content-center">
+							
+						<img class="img img-fluid profile-image"  src="./content/media/images/me_bw.jpg">
+						</div>
+						<div class="container p-4">
+		<div class="col-12">
+			<div class="container d-flex justify-content-center">
+				
+			<a href="https://wakatime.com/@c1a77a3b-a180-4db0-b88f-60a5d50b527c"><img src="https://wakatime.com/badge/user/c1a77a3b-a180-4db0-b88f-60a5d50b527c.svg" alt="Total time coded since Aug 2 2024" /></a>
+			</div>
+		</div>
+	</div>
+					</div>
+				</div>
+
+				<div class=" col-lg-9 col-sm-12">
+					 
+					 <p class="text-center fw-bolder text-primary fs-1 "  >
+
+					 	VICTOR KIPKEMBOI
+					 </p>
+					 <p class="text-center fw-bold fs-2 "  >
+
+					 	Full stack software engineer
+					 </p>
+
+
+					 <br>
+					 <div class="container fs-5 fw-bolder">
+					 	
+					 <div class="row text-center justify-content-center ">
+					 	<div class="row col-12 col-mb-6 sub-section p-3" >
+					 <p class="about-text">
+					 	{{about_me.short}}
+					 </p>
+					 	<hr>	
+					 		<p class="about-text" style="" >
+                       {{ about_me.long }}
+                     </p>
+                     
+					 </div>
+					 	</div>
+					 </div>
+<div class="container sub-section">
+		<div class="sub-section-heading">REACH OUT</div>
+		<div class="row col-12 col-mb-6  gy-2 fs-6 p-6">
+			
+			 
+			 <p class="col-10 text-center">  &nbspletingvictorkipkemboi@gmail.com</p>
+			 <p class="col-10 text-center"><i class="bi bi-telephone-forward-fill"></i>&nbsp  + 254 712 553 793</p>
+
+			 <p class="col-10 text-center"> <i class="bi bi-pin-map-fill"></i>&nbsp &nbsp  Nairobi , Kenya </p>
+
+
+		</div>
+	</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	
+
+<br>
+
+
+
+
+</div>
+
+<!-- END BIO-->
+
+<!-- START CODING ICONS-->
+<div class="container p-2">
+	<div class="container sub-section">
+		
+	<div class="row justify-content-center">
+		
+	<div class="row ">
+		<div class="col-2 coding-icon-container">
+            <i class="devicon-python-plain-wordmark"></i>
+          </div>
+          <div class="col-2 coding-icon-container">
+           
+           
+            <i class="devicon-cplusplus-plain colored"></i>
+          
+          
+          </div>
+         
+          <div class="col-2 coding-icon-container">
+            
+         
+            <i class="bi bi-javascript"></i>
+          
+          </div>
+            <div class="col-2 coding-icon-container">
+            
+         
+        
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          
+          
+          </div>
+            <div class="col-2 coding-icon-container">
+            
+         
+            
+            <i class="devicon-html5-plain colored"></i>
+          
+          
+          </div>
+            <div class="col-2 coding-icon-container">
+            
+         
+           
+        
+            <i class="devicon-go-original-wordmark colored"></i>
+          
+          
+          
+          </div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- END CODING ICONS-->
+
+
+
+<!-- START BACKEND AND FRONTEND -->
+<div class="container p-0">
+	<div class="row p-2 gy-3 gx-3">
+		<div class="col-12 col-md-6">
+			<div class="container p-0 sub-section">
+				<div class="sub-section-heading">Backend</div>
+
+				<div class="container">
+			<div class="row p-2">
+				{% for skill in skills.backend %}
+					<div class="col-6 p-1 ">
+						<div class="row justify-content-center p-0">
+							
+						<div class="btn btn-outline-dark word-search-on-click col-8" data-word="What is {{ skill  }} in relation to IT">{{ skill }}</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>			
+		</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="container p-0 sub-section">
+				<div class="sub-section-heading">Frontend</div>
+					<div class="container">
+			<div class="row p-2">
+				{% for skill in skills.frontend %}
+					<div class="col-6 p-1 ">
+						<div class="row justify-content-center p-0">
+							
+						<div class="btn btn-outline-dark word-search-on-click col-8" data-word="What is {{ skill  }} in relation to IT">{{ skill }}</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>			
+		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  BACKEND AND FRONTEND -->
+
+<!--  START CONTACT INFO -->
+<div class="container p-2">
+	<div class="container p-0 sub-section contact-info-sub-section">
+		<div class="sub-section-heading" >SOCIALS AND CONTACTS</div>
+		<div class="container fs-1 p-4">
+			<div class="row justify-content-center">
+					  <div class="row gy-1  ">
+		    
+
+		    	<a target="_blank" href="{{ contact_info.github }}" class="col-4 external-link-container">
+		    		<i class="bi bi-github" ></i>
+		    	</a>
+				
+		    	<a  target="_blank" class="col-4 external-link-container" href="{{contact_info.linkedin}}" >
+		    		<i class="bi bi-linkedin"></i>
+		    	</a>
+		    	   <a data-bs-toggle="tooltip" data-bs-placement="top" title="Phone number" class="col-4" href="tel:{{ contact_info.phone_number }}">
+		    	   	<i class="bi bi-telephone-fill"></i>
+		    	   </a>
+		    
+
+		    	<a data-bs-toggle="tooltip" data-bs-placement="top" title="Leetcode" class="col-4" href="{{ contact_info.leetcode }}">
+		    		
+            <i class="devicon-leetcode-plain colored"></i>
+          
+		    	</a>
+
+		    	<a data-bs-toggle="tooltip" data-bs-placement="top" title="Codewars" href="{{ contact_info.codewars }}" class="col-4">
+		    		<i class="cib-codewars"></i>
+		    	</a>
+
+		    		<a data-bs-toggle="tooltip" data-bs-placement="top" title="Sololearn" class="col-4 external-link-container" target="_blank"  href="{{ contact_info.sololearn }}">
+		    	<svg viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" width=30 height=30 fill="#000000" stroke="#000000" stroke-width="4.8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M20.7143,30.3722c0-3.2261-6.3709-3.6715-6.3709-11.7725S18.8446,9.6954,18.8446,6.55,6.38,7.23,6.38,19.2922,20.7143,33.5983,20.7143,30.3722Z"></path><path class="a" d="M30.3042,27.2168c-3.2261,0-3.6715,6.371-11.7724,6.371S9.6274,29.0865,6.4823,29.0865s.68,12.465,12.742,12.465S33.53,27.2168,30.3042,27.2168Z"></path><path class="a" d="M17.6958,20.8178c3.2261,0,3.6714-6.371,11.7724-6.371s8.9044,4.5013,12.0495,4.5013-.68-12.465-12.742-12.465S14.47,20.8178,17.6958,20.8178Z"></path><path class="a" d="M27.2864,17.6278c0,3.2261,6.371,3.6715,6.371,11.7725s-4.5012,8.9043-4.5012,12.05,12.465-.68,12.465-12.742S27.2864,14.4017,27.2864,17.6278Z"></path></g></svg>
+		    	</a>
+		  </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--  END CONTACT INFO -->
+ 
+
+
+</div>

@@ -1,0 +1,43 @@
+
+
+<div class="page-section" id="bugs-section">
+	
+
+	
+<div class="container">
+	<div class="row justify-content-center">
+		<h1>I squash bugs, but not these </h1>
+	</div>
+</div>
+
+
+<div class="container p-2">
+	<div class="row justify-content-center">
+		
+	<div class="row gy-3 gx-3">
+		{%for image in critters %}
+
+ 
+	 			
+<div class="col-12 col-md-4 p-3 ">
+		<div class="item-card ">
+			<div class="container p-0">
+				<div class="row justify-content-center">
+
+				<img class="img img-fluid" src="{{ image.path}}">
+				</div>
+			</div>
+			<div class="row">
+				<div class="item-card-title">{{image.title}}</div>
+
+			</div>
+			<div class="container">
+			</div>
+		</div>
+	</div>
+		{%endfor%}
+	</div>
+	</div>
+</div>
+
+</div>
