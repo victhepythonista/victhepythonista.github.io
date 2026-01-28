@@ -1,0 +1,39 @@
+# Site settings
+title: My Portfolio
+description: A showcase of my work and projects.
+url: https://victhepythonista.github.io 
+baseurl: ""                            
+
+# Author settings
+author:
+  name: Victor Kipkemboi
+  email: letingvictorkipkemboi@gmail.com
+
+# Build settings
+markdown: kramdown 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-relative-links
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page:num/"
+
+# Social media links
+social:
+  github: https://github.com/victhepythonista
+
+# Exclude settings
+exclude:
+  - README.md
+  - venv
+
+# Theme settings
+theme: jekyll-theme-primer
+
+# Permalinks configuration
+permalink: /:categories/:title/
+
+
