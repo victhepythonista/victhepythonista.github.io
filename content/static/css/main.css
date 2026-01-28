@@ -286,6 +286,7 @@ color:var(--primary-color);
 
 .technology{
 	border: groove var(--tertiary-color) 2px;
-	padding: 3px;
+	padding: 7px;
 	text-align: center;
+	font-size:small;
 }
