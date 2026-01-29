@@ -89,7 +89,7 @@ color:var(--primary-text-color);
         }
 
         .page-content {
-            margin-top: 0px; /* Space for fixed navbar */
+            margin-top: 30px; /* Space for fixed navbar */
             padding: 10px;
         }
 
