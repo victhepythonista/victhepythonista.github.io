@@ -115,7 +115,7 @@ color:var(--primary-text-color);
 	color:var(--primary-text-color);
 	background-color: var(--primary-color);
 	text-align: center;
-	font-size: clamp(0.8rem, 0.2vw, 1rem);
+	font-size: clamp(1rem, 0.2vw + 0.1rem, 2rem);
 	 font-family: 'Consolas';
 }
 
