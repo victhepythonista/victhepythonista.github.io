@@ -9,7 +9,7 @@ from critters import CRITTERS
 
  
 skills = {
-	"backend":["Python" ,"SQL", "Django" , "Bash", "Golang" , "C" ],
+	"backend":["Python" ,"SQL", "Django" , "Bash" , "C" ],
 	"frontend":["Javascript", "HTML" , "CSS" , "Jquery", "Bootstrap"]
 }
 

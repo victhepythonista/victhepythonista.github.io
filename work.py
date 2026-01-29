@@ -146,7 +146,7 @@ FREELANCE_WORK = [
 ListItem(
 title = "Betmonitor bot", 
 short_description = "A tool for scraping prematch sports info on betmonitor.com ", 
-long_description = "This tool fetches prematch betting odds across the websites listend on betmonitor.com and stores it in CSV files for further analysis ",
+long_description = "This tool fetches prematch betting odds across the websites listed on betmonitor.com and stores it in CSV files for further analysis ",
 redirect_url = "",
 screenshots_folder = "work/bet_monitor/",
 banner = "",
