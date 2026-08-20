@@ -19,6 +19,7 @@
 @import url('https://fonts.cdnfonts.com/css/buba-demo');
 @import url('https://fonts.cdnfonts.com/css/biscuit-tin');
 @import url('https://fonts.cdnfonts.com/css/serbie');
+@import url('https://fonts.cdnfonts.com/css/pixelify-sans');
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Montserrat",  sans-serif;
@@ -50,6 +51,9 @@
 .font-serbie{
                                                                       font-family: 'Serbie', sans-serif !important;
                                                 
+}
+.font-pixelify{
+  font-family: 'Pixelify Sans', sans-serif !important;
 }
 .font-gdby{
                                                                       font-family: 'SayingGoodbye', sans-serif !important;
@@ -503,7 +507,6 @@ font-family: 'Serbie', sans-serif !important;
   font-size: 15px;
   padding: 80px 0 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-brand h1,
@@ -917,15 +920,19 @@ section,
 /*--------------------------------------------------------------
 # Blog Hero Section
 --------------------------------------------------------------*/
+
+
+.slider-icon{
+  font-size: clamp(5.5rem, 1.5vw, 10.5rem) !important;
+}
 .blog-hero {
   padding: 0;
                                                 
 }
 
         .blog-hero-content h1,h2,h3{
-                                    font-family: 'Dunkin', sans-serif !important;
-     font-family: 'Dunkin Sans', sans-serif !important;
-                                                 
+  font-family: 'Pixelify Sans', sans-serif !important;
+
           color:#ffff00!important;
         }
 .blog-hero .blog-hero-slider {
@@ -1001,12 +1008,13 @@ section,
 .blog-hero .blog-hero-content .meta {
   margin-bottom: 30px;
   font-size: 14px;
+  font-family: 'Pixelify Sans', sans-serif !important;
+  color: #ffff00;
 }
 
 .blog-hero .blog-hero-content .meta span {
   display: inline-block;
   margin-right: 20px;
-  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
 .blog-hero .blog-hero-content .meta span:last-child {
@@ -1014,12 +1022,10 @@ section,
 }
 
 .blog-hero .blog-hero-content .meta span a {
-  color: var(--contrast-color);
   font-weight: 600;
 }
 
 .blog-hero .blog-hero-content .meta span a:hover {
-  color: var(--accent-color);
 }
 
 @media (max-width: 767px) {
@@ -1301,7 +1307,9 @@ section,
 # Category Section Section
 --------------------------------------------------------------*/
 .category-section .hero-post {
+    font-family: 'Pixelify Sans', sans-serif !important;
   background: var(--surface-color);
+
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 90%);
