@@ -65,6 +65,40 @@ def generate_services_page():
     env = Environment(loader=FileSystemLoader("./"))
     template = env.get_template("services.jinja")
     context = {} | base_context
+    context["services"] = {
+        "app_development": [
+            {
+                "title": "Custom apps ",
+                "description": "I develop custom desktop applications designed around your specific business needs. From data management and automation tools to reporting systems and productivity software, I create reliable applications that improve efficiency and simplify your daily workflow.",
+                "price": "From 30$",
+            },
+            {
+                "title": "2D games",
+                "description": "I create engaging 2D games using Python, Pygame, and Arcade. From simple arcade-style games to more advanced projects, I build interactive gameplay, smooth controls, scoring systems, animations, and user-friendly interfaces.",
+                "price": "From 100$",
+            },
+        ],
+        "website_development": [
+            {
+                "title": "Portfolio website ",
+                "description": "A neat portfolio website for an individual or a business",
+                "price": "From 60$",
+                "duration": "2-7 days",
+            },
+            {
+                "title": "Finance/Ecommerce/Booking websites",
+                "description": " professional websites for financial services, e-commerce businesses, and booking-based platforms. I create secure, user-friendly experiences that help customers manage accounts, purchase products, schedule appointments, and complete transactions with ease.  ",
+                "price": "From 200$",
+                "duration": "10-40 days",
+            },
+            {
+                "title": "API integrtions",
+                "description": "Seamlessly connect your website or application with third-party services using secure and reliable API integrations. From payment gateways and social media platforms to maps, booking systems, and custom business tools, I’ll ensure your systems communicate efficiently and deliver a smooth user experience. ",
+                "price": "From 200$",
+                "duration": "10-40 days",
+            },
+        ],
+    }
     context["current_page"] = "services"
     with open("services.html", "w") as f:
         f.write(template.render(context))
