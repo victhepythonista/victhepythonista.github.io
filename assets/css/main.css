@@ -40,11 +40,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #478235;  /* The default color of the main navmenu links */
-  --nav-hover-color: #6fb6cc; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ffff00; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #3b3b3b; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #3b3b3b; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: var(--nav-color); /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #2986cc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ffff00; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -268,7 +268,6 @@ h6 {
   .navmenu a{
 font-family: 'Serbie', sans-serif !important;
 
-
   }
 
   .navmenu a,
@@ -276,6 +275,7 @@ font-family: 'Serbie', sans-serif !important;
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
+
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -283,6 +283,8 @@ font-family: 'Serbie', sans-serif !important;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+  animation: borderSteps 1s steps(4, end) forwards;
+
   }
 
   .navmenu a i,
@@ -292,6 +294,9 @@ font-family: 'Serbie', sans-serif !important;
     margin-left: 5px;
     transition: 0.3s;
   }
+ 
+
+ 
 
   .navmenu li:last-child a {
     padding-right: 0;
@@ -932,6 +937,7 @@ section,
 
         .blog-hero-content h1,h2,h3{
   font-family: 'Pixelify Sans', sans-serif !important;
+  font-size: clamp(6.5rem, 1.9vw, 14.5rem) !important;
 
           color:#ffff00!important;
         }
@@ -1007,7 +1013,7 @@ section,
 
 .blog-hero .blog-hero-content .meta {
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: clamp(2.5rem, 1.4vw, 5rem);
   font-family: 'Pixelify Sans', sans-serif !important;
   color: #ffff00;
 }

@@ -1,0 +1,35 @@
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class=" row justify-content-center p-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+
+        <img src="content/media/images/me_bw.jpg" class="col-2 p-0" style="max-height:30px; border-radius: 20px 0px 0px 20px ;">
+
+        <img src="content/media/images/victhepythonista.gif" class="col-9 p-0" style="max-height:30px; border-radius: 0px ;margin: 0;">
+
+      </a>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list  "></i>
+
+      <nav id="navmenu" class="navmenu  text-uppercase"  >
+        <ul  style=" font-family: 'SayingGoodbye', sans-serif !important;">
+          <li><a href="index.html" {%if current_page == "home"%} class="active "{%endif%}>Home</a></li>
+          <li><a href="services.html" class="">services</a></li>
+          <li><a href="skillset.html">Skillset</a></li>
+          <li class="dropdown"><a href="#"><span>PROJECTS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="freelance_projects.html">Freelance</a></li>
+              <li><a href="paid_projects.html">$ Paid </a></li>
+          
+
+         
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+ 
+    </div>
+  </header>

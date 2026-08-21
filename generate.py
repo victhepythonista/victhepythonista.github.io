@@ -14,7 +14,7 @@ contact_information = {
     "phone_number": "+254 712 553 793",
     "github": "https://github.com/victhepythonista",
     "linkedin": "https://www.linkedin.com/in/victor-kipkemboi-leting-b58963187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5AFyhMPWT6elwrzcmQ05Mw%3D%3D",
-    "sololearn": "https://www.sololearn.com/en/profile/16972905",
+    "sololearn": "https://www.sololean.com/en/profile/16972905",
     "whatsapp": "+254 712 553 793",
     "leetcode": "https://leetcode.com/u/victhepythonista",
     "codewars": "https://www.codewars.com/users/victhepythonista",
@@ -35,6 +35,8 @@ context = {
     "critters": CRITTERS,
 }
 
+base_context = {"current_page": ""}
+
 
 def generate_portfolio_page(raw_data_file, context):
     print("Generating .....")
@@ -50,8 +52,21 @@ def generate_index_page():
     template = env.get_template("index.jinja")
     context = {
         "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
-    }
+    } | base_context
+    context["current_page"] = "home"
     with open("index.html", "w") as f:
+        f.write(template.render(context))
+        print("Template generated ")
+
+    pass
+
+
+def generate_services_page():
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("services.jinja")
+    context = {} | base_context
+    context["current_page"] = "services"
+    with open("services.html", "w") as f:
         f.write(template.render(context))
         print("Template generated ")
 
@@ -71,3 +86,4 @@ def generate_paid_projects_page():
 
 
 generate_index_page()
+generate_services_page()
