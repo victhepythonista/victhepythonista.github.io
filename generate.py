@@ -7,6 +7,8 @@ from critters import CRITTERS
 skills = {
     "backend": ["Python", "SQL", "Django", "Bash", "C"],
     "frontend": ["Javascript", "HTML", "CSS", "Jquery", "Bootstrap"],
+    "cloud": ["AWS s3 storage", "Cloudinary", "Koyeb hosting configs", "Docker"],
+    "Web scraping": ["Selenium", "Playwright", "Requests"],
 }
 
 contact_information = {
@@ -51,14 +53,20 @@ def generate_index_page():
     env = Environment(loader=FileSystemLoader("./"))
     template = env.get_template("index.jinja")
     context = {
-        "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
+        "bio": "I specialize in full stack website development , web scraping , data visualization , 2D games and custom desktop applications. ",
     } | base_context
-    context["current_page"] = "home"
     with open("index.html", "w") as f:
         f.write(template.render(context))
         print("Template generated ")
 
-    pass
+
+def generate_contacts_page():
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("contact.jinja")
+    context = {} | base_context | {"contact_info": contact_information}
+    with open("contact.html", "w") as f:
+        f.write(template.render(context))
+        print("contacts.html generated ")
 
 
 def generate_services_page():
@@ -108,16 +116,44 @@ def generate_services_page():
 
 
 def generate_skills_page():
-    pass
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("skillset.jinja")
+    context = {
+        "skills": skills,
+    } | base_context
+    with open("skillset.html", "w") as f:
+        f.write(template.render(context))
+        print("Template generated ")
 
 
 def generate_freelance_projects_page():
-    pass
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("freelance_projects.jinja")
+    context = {
+        "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
+    } | base_context
+    context["current_page"] = "home"
+    with open("freelance_projects.html", "w") as f:
+        f.write(template.render(context))
+        print("Template generated ")
 
 
 def generate_paid_projects_page():
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("paid_projects.jinja")
+    context = {
+        "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
+    } | base_context
+    context["current_page"] = "home"
+    with open("paid_projects.html", "w") as f:
+        f.write(template.render(context))
+        print("Template generated ")
+
+    pass
     pass
 
 
 generate_index_page()
 generate_services_page()
+generate_skills_page()
+generate_contacts_page()

@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - Story Bootstrap Template</title>
+  <title>Victor Kipkemboi</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -13,6 +15,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+
+  <link href="https://fonts.cdnfonts.com/css/sayinggoodbye" rel="stylesheet">
+                
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,6 +27,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -33,265 +40,209 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
 </head>
 
-<body class="contact-page">
+
+<style>
+  
+  .sitename  {
+    font-weight:bolder;
+    color: seagreen !important;
+                                                                        font-family: 'SayingGoodbye', sans-serif;
+                                                
+  }
+</style>
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.html" class=" row justify-content-center p-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Story</h1>
+
+
+        <img src="content/media/images/victhepythonista.gif" class="col-9 p-0" style="max-height:30px;  margin: 0;">
+
       </a>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list  "></i>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="category.html">Category</a></li>
-          <li><a href="blog-details.html">Blog Details</a></li>
-          <li><a href="author-profile.html">Author Profile</a></li>
-          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <nav id="navmenu" class="navmenu  text-uppercase"  >
+        <ul  style=" font-family: 'SayingGoodbye', sans-serif !important;">
+          <li><a href="index.html"  data-page="home">Home</a></li>
+          <li><a href="services.html" class="" data-page="services">services</a></li>
+          <li><a href="skillset.html" data-page="skillset">Skillset</a></li>
+          <li class="dropdown"><a href="#"><span>PROJECTS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="category.html">Category</a></li>
-              <li><a href="blog-details.html">Blog Details</a></li>
-              <li><a href="author-profile.html">Author Profile</a></li>
-              <li><a href="search-results.html">Search Results</a></li>
-              <li><a href="404.html">404 Not Found Page</a></li>
+              <li><a href="freelance_projects.html" data-page="freelance-projects">Freelance</a></li>
+              <li><a href="paid_projects.html" data-page="paid-projects"> $ Paid </a></li>
+          
 
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
+         
             </ul>
           </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+ 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 class="heading-title">Contact</h1>
-              <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
-                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
-                ipsum dolorem.
-              </p>
+ 
+<style>
+	
+
+	.grid-post{
+  background-color:var(--nav-hover-color);
+  color:#343232;
+  padding: 10px;
+  border-radius: 20px;
+	}
+
+	.grid-post h2{
+		color:#343232 !important;
+	}
+	.grid-post h3 , h4 , h5{
+		color: #0c0e2f;
+	}
+</style>
+<div class="container">
+	
+                  <div class="col-md-12 col-12 p-4" data-aos="fade-up" data-aos-delay="400">
+              <article class="grid-post"  >
+               
+               <h1 class="font-maria text-dark fw-bolder text-uppercase text-center fs-1">My contact info , reach out :)</h1>
+
+
+
+
+	<div class="container " >
+		
+		<div class="row justify-content-center">
+			
+		<div class="row col-12 col-lg-6  justify-content-center" style="border:3px solid var(--surface-color);border-radius: 17px;">
+
+			<div class="row">
+				
+			<div class="col-2 justify-content-center">
+				
+			<i class="bi bi-envelope fs-1"></i>
+			</div>
+<div class="col-10 justify-content-center">
+	
+			<h4 class=" p-2 text-center">letingvictorkipkemboi@gmail.com</h4>
+</div>
+		</div>
+
+	<div class="row">
+				
+			<div class="col-2 justify-content-center">
+				
+			<i class="bi bi-phone fs-1"></i>
+			</div>
+<div class="col-10 justify-content-center">
+	
+			<h4 class=" p-2 text-center">+254 723 553 793</h4>
+</div>
+		</div>
+
+
+
+	<div class="row">
+				
+			<div class="col-2 justify-content-center">
+				
+			<i class="bi bi-geo-alt-fill fs-1"></i>
+			</div>
+<div class="col-10 justify-content-center">
+	
+			<h4 class=" p-2 text-center">Nairobi, Kenya</h4>
+</div>
+		</div>
+
+
+
+			</div>
+
+
+	</div>
+		</div>
+ 
+    
+
+
+
+
+
+
+               <div class="container">
+               	<div class="row">
+              
+               		
+               	</div>
+               </div>
+               
+
+ <div class="container  "> 
+			<div class="container fs-1 p-4">
+			<div class="row justify-content-center" style="color: var(--surface-color) !important;">
+					  <div class="row gy-1 justify-content-center ">
+		    
+
+		    	<a target="_blank" href="https://github.com/victhepythonista" class="col-2 external-link-container">
+		    		<i class="bi bi-github text-dark"  ></i>
+		    	</a>
+				
+		    	<a  target="_blank" class="col-2 external-link-container" href="https://www.linkedin.com/in/victor-kipkemboi-leting-b58963187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5AFyhMPWT6elwrzcmQ05Mw%3D%3D" >
+		    		<i class="bi bi-linkedin text-dark"></i>
+		    	</a>
+		    	 
+		    
+
+		    	<a data-bs-toggle="tooltip" data-bs-placement="top" title="Leetcode" class="col-2" href="https://leetcode.com/u/victhepythonista">
+		    		
+            <i class="devicon-leetcode-plain colored text-dark"></i>
+          
+		    	</a>
+
+		    	 
+
+		    		<a data-bs-toggle="tooltip" data-bs-placement="top" title="Sololearn" class="col-2 external-link-container" target="_blank"  href="https://www.sololean.com/en/profile/16972905">
+		    	<svg viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" width=30 height=30 fill="#000000" stroke="#000000" stroke-width="4.8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M20.7143,30.3722c0-3.2261-6.3709-3.6715-6.3709-11.7725S18.8446,9.6954,18.8446,6.55,6.38,7.23,6.38,19.2922,20.7143,33.5983,20.7143,30.3722Z"></path><path class="a" d="M30.3042,27.2168c-3.2261,0-3.6715,6.371-11.7724,6.371S9.6274,29.0865,6.4823,29.0865s.68,12.465,12.742,12.465S33.53,27.2168,30.3042,27.2168Z"></path><path class="a" d="M17.6958,20.8178c3.2261,0,3.6714-6.371,11.7724-6.371s8.9044,4.5013,12.0495,4.5013-.68-12.465-12.742-12.465S14.47,20.8178,17.6958,20.8178Z"></path><path class="a" d="M27.2864,17.6278c0,3.2261,6.371,3.6715,6.371,11.7725s-4.5012,8.9043-4.5012,12.05,12.465-.68,12.465-12.742S27.2864,14.4017,27.2864,17.6278Z"></path></g></svg>
+		    	</a>
+		  </div>
+
+			</div>
+		</div>
+
+
+	</div> 
+	
+
+
+              </article>
             </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
 
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="contact-info-panel">
-            <div class="contact-info-header">
-              <h3>Contact Information</h3>
-              <p>Dignissimos deleniti accusamus rerum voluptate. Dignissimos rerum sit maiores reiciendis voluptate inventore ut.</p>
-            </div>
-
-            <div class="contact-info-cards">
-              <div class="info-card">
-                <div class="icon-container">
-                  <i class="bi bi-pin-map-fill"></i>
-                </div>
-                <div class="card-content">
-                  <h4>Our Location</h4>
-                  <p>4952 Hilltop Dr, Anytown, CA 90210</p>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="icon-container">
-                  <i class="bi bi-envelope-open"></i>
-                </div>
-                <div class="card-content">
-                  <h4>Email Us</h4>
-                  <p>info@example.com</p>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="icon-container">
-                  <i class="bi bi-telephone-fill"></i>
-                </div>
-                <div class="card-content">
-                  <h4>Call Us</h4>
-                  <p>+1 (555) 123-4567</p>
-                </div>
-              </div>
-
-              <div class="info-card">
-                <div class="icon-container">
-                  <i class="bi bi-clock-history"></i>
-                </div>
-                <div class="card-content">
-                  <h4>Working Hours</h4>
-                  <p>Monday-Saturday: 9AM - 7PM</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="social-links-panel">
-              <h5>Follow Us</h5>
-              <div class="social-icons">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-panel">
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="form-container">
-              <h3>Send Us a Message</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris hendrerit faucibus imperdiet nec eget felis.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
-                  <label for="nameInput">Full Name</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
-                  <label for="emailInput">Email Address</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
-                  <label for="subjectInput">Subject</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
-                  <label for="messageInput">Your Message</label>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="d-grid">
-                  <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Contact Section -->
-
+ 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative  ">
 
     <div class="container">
       <div class="row gy-5">
 
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="index.html" class="logo d-flex align-items-center mb-3">
-              <span class="sitename">Story</span>
-            </a>
-            <p class="tagline">Innovating the digital landscape with elegant solutions and timeless design.</p>
+         
 
-            <div class="social-links mt-4">
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
-            </div>
-          </div>
-        </div>
+       
 
-        <div class="col-lg-6">
-          <div class="footer-links-grid">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Newsroom</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">UI/UX Design</a></li>
-                  <li><a href="#">Digital Strategy</a></li>
-                  <li><a href="#">Branding</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="footer-cta">
-            <h5>Let's Connect</h5>
-            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-          </div>
-        </div>
+        
 
       </div>
     </div>
@@ -301,13 +252,12 @@
         <div class="row">
           <div class="col-12">
             <div class="footer-bottom-content">
-              <p class="mb-0">© <strong>Story</strong>. All rights reserved.</p>
-              <div class="credits">
+              <div class="credits" style="font-size: xx-small;">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+                Customized by me but designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
               </div>
             </div>
           </div>

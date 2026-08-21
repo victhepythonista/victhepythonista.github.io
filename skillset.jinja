@@ -1,1 +1,115 @@
 
+{% extends "./base.jinja" %}
+{% block content %}
+<style>
+.skill-box {
+  margin: 0.5rem;
+  padding: 1rem 0.75rem;
+  border: 1px solid var(--surface-color);
+  border-radius: 10px;
+  background-color: #252525;
+  color: #00ff00;
+  text-align: center;
+  font-weight: 900;
+  font-size: clamp(1.3rem, 1.4vw, 2.4rem);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px var(--surface-color);
+}
+
+/* Improve spacing and alignment */
+.skill-row {
+  justify-content: center;
+  gap: 0.5rem 0;
+}
+
+/* Better layout on smaller screens */
+@media (max-width: 768px) {
+  .skill-box {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-box {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+
+
+	.grid-post{
+  background-color:var(--nav-hover-color);
+  color:#343232;
+  padding: 10px;
+  border-radius: 20px;
+	}
+
+	.grid-post h2{
+		color:#343232 !important;
+	}
+	.grid-post h3 , h4 , h5{
+		color: #0c0e2f;
+	}
+</style>
+
+	<div class="text-center container p-3 fs-1 font-biscuit-tin">
+	SKILLS :
+	</div>
+ 
+	    <div class="posts-grid">
+          <div class="row gy-4">
+      
+
+ 
+
+         
+
+        
+
+
+
+         
+{% for title,data in skills.items() %}
+
+                  <div class="col-md-6 p-4" data-aos="fade-up" data-aos-delay="400">
+              <article class="grid-post"  >
+               
+               <h2 class="font-maria fw-bolder text-uppercase text-center fs-1">{{title}}</h2>
+               <div class="container">
+               	<div class="row">
+              {%for skill_item in data%}
+              	<div class="col-4 col-lg-4 p-1  font-maria ">
+              		<div class="skill-box text-uppercase font-pixelify">
+              			
+              	{{ skill_item }}
+              		</div>
+              </div>
+              {% endfor %}
+               		
+               	</div>
+               </div>
+               
+
+          <div class="row">
+          	<div class="col-2 p-3">
+          		
+          	</div>
+          </div>
+    
+
+              </article>
+            </div>
+
+{% endfor %}
+                   
+          </div>
+        </div>
+
+{% endblock %}
