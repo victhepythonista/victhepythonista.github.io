@@ -100,7 +100,7 @@ def generate_services_page():
                 "duration": "10-40 days",
             },
             {
-                "title": "API integrtions",
+                "title": "API integrations",
                 "description": "Seamlessly connect your website or application with third-party services using secure and reliable API integrations. From payment gateways and social media platforms to maps, booking systems, and custom business tools, I’ll ensure your systems communicate efficiently and deliver a smooth user experience. ",
                 "price": "From 200$",
                 "duration": "10-40 days",
