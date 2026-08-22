@@ -101,9 +101,9 @@ def generate_services_page():
             },
             {
                 "title": "API integrations",
-                "description": "Seamlessly connect your website or application with third-party services using secure and reliable API integrations.",
-                "price": "From 200$",
-                "duration": "10-40 days",
+                "description": "Seamlessly connect your website or application with third-party services ",
+                "price": "From 80$",
+                "duration": "2-20 days",
             },
         ],
     }
