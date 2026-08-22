@@ -126,12 +126,12 @@ def generate_skills_page():
         print("Template generated ")
 
 
-def generate_freelance_projects_page():
+def generate_personal_projects_page():
     env = Environment(loader=FileSystemLoader("./"))
-    template = env.get_template("freelance_projects.jinja")
+    template = env.get_template("personal_projects.jinja")
     context = {} | base_context
     context["projects"] = PROJECTS
-    with open("freelance_projects.html", "w") as f:
+    with open("personal_projects.html", "w") as f:
         f.write(template.render(context))
         print("Freelance projects page  generated ")
 
@@ -160,6 +160,6 @@ generate_index_page()
 generate_services_page()
 generate_skills_page()
 generate_contacts_page()
-generate_freelance_projects_page()
+generate_personal_projects_page()
 generate_paid_projects_page()
 generate_bugs_page()
