@@ -145,8 +145,15 @@ def generate_paid_projects_page():
         f.write(template.render(context))
         print("Paid projects page generated ")
 
-    pass
-    pass
+
+def generate_bugs_page():
+    env = Environment(loader=FileSystemLoader("./"))
+    template = env.get_template("bugs.jinja")
+    context = {} | base_context
+    context["critters"] = CRITTERS
+    with open("bugs.html", "w") as f:
+        f.write(template.render(context))
+        print("bugs page generated ")
 
 
 generate_index_page()
@@ -155,3 +162,4 @@ generate_skills_page()
 generate_contacts_page()
 generate_freelance_projects_page()
 generate_paid_projects_page()
+generate_bugs_page()
