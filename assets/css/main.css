@@ -33,7 +33,7 @@
 :root { 
   --background-color:#252525; /* Background color for the entire website, including individual sections */
   --default-color: #f8f8f8; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #6776f8; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #252525; /* Color for headings, subheadings and title throughout the website */
   --accent-color:#11ab9e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #121514; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #121514; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -68,8 +68,8 @@
   font-family: 'DASHER', sans-serif !important;
 }
 .font-dunkin{
-                                                                      font-family: 'Dunkin', sans-serif !important;
-                                                                    font-family: 'Dunkin Sans', sans-serif !important;
+font-family: 'Dunkin', sans-serif !important;
+font-family: 'Dunkin Sans', sans-serif !important;
                                                 
 }
 
@@ -939,12 +939,16 @@ section,
   padding: 0;
                                                 
 }
-
-        .blog-hero-content h1,h2,h3{
+.blog-hero-content .slide-title{
   font-family: 'Pixelify Sans', sans-serif !important;
-  font-size: clamp(6.5rem, 1.9vw, 14.5rem) !important;
+  font-size: clamp(3.5rem, 1.9vw, 10.5rem) !important;
 
           color:#ffff00!important;
+        }
+        .blog-hero-content h1,h2,h3,h4,h5{
+  font-family: 'Pixelify Sans', sans-serif !important;
+
+          color:#eece13!important;
         }
 .blog-hero .blog-hero-slider {
   position: relative;
@@ -954,6 +958,7 @@ section,
 .blog-hero .blog-hero-item {
   position: relative;
   height: 80vh;
+  padding-top: 0;
   min-height: 600px;
 }
 
@@ -1020,7 +1025,7 @@ section,
   margin-bottom: 30px;
   font-size: clamp(2.5rem, 1.4vw, 5rem);
   font-family: 'Pixelify Sans', sans-serif !important;
-  color: #ffff00;
+  color: #ebf3b5;
 }
 
 .blog-hero .blog-hero-content .meta span {
@@ -4798,3 +4803,69 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+
+
+
+.item-card{
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4);
+    color: var(--primary-color);
+ transition:hover 0.5s ease, transform 0.4s ease; 
+}
+
+.item-card:hover{
+  transform:scale(1.1);
+  color:var(--tertiary-color);
+    box-shadow: 0 0 9px rgba(255, 235, 59,0.9);
+
+
+}
+.item-card:hover .item-card-description{
+  font-weight: bolder;
+  color:var(--tertiary-color);
+  font-size: clamp(1.2rem, 1vw + 0.1rem , 2rem);
+
+}
+
+.item-card:hover .item-card-title{
+  font-size: clamp(2rem, 1vw + 0.4rem , 3.2rem);
+}
+
+
+.item-card img{
+  max-width:100%;
+  min-width:100%;
+  max-height: 200px;
+  min-width: 200px;
+  object-fit: cover;
+}
+.item-card-title{
+  font-weight:bold;
+  text-align: center;
+  color: var(--tertiary-color);
+
+}
+
+.item-card-description{
+  color: white;
+  font-weight: light;
+  font-size: clamp(0.8rem, 0.8ren, 2rem);
+}
+
+
+.technology{
+  border: groove var(--tertiary-color) 2px;
+  padding: 7px;
+  text-align: center;
+  font-size:small;
+  color:var(--tertiary-color) !important;
+}
+
+
+.technology-button:hover{
+    background-color: var(--tertiary-color);
+    color: var(--tertiary-text-color) !important;
+
+}
+

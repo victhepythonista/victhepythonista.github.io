@@ -129,25 +129,21 @@ def generate_skills_page():
 def generate_freelance_projects_page():
     env = Environment(loader=FileSystemLoader("./"))
     template = env.get_template("freelance_projects.jinja")
-    context = {
-        "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
-    } | base_context
-    context["current_page"] = "home"
+    context = {} | base_context
+    context["projects"] = PROJECTS
     with open("freelance_projects.html", "w") as f:
         f.write(template.render(context))
-        print("Template generated ")
+        print("Freelance projects page  generated ")
 
 
 def generate_paid_projects_page():
     env = Environment(loader=FileSystemLoader("./"))
     template = env.get_template("paid_projects.jinja")
-    context = {
-        "bio": "Apart from my obsession with coding I love anything to do with astronomy , palaentology ,astrophysics , nature , geography , biology,chemistry and anthropology . I enjoy star gazing , exploring nature and reading a good book . ",
-    } | base_context
-    context["current_page"] = "home"
+    context = {} | base_context
+    context["paid_projects"] = FREELANCE_WORK
     with open("paid_projects.html", "w") as f:
         f.write(template.render(context))
-        print("Template generated ")
+        print("Paid projects page generated ")
 
     pass
     pass
@@ -157,3 +153,5 @@ generate_index_page()
 generate_services_page()
 generate_skills_page()
 generate_contacts_page()
+generate_freelance_projects_page()
+generate_paid_projects_page()
