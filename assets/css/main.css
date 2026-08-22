@@ -735,7 +735,7 @@ font-family: 'Serbie', sans-serif !important;
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: var(--background-color);
+  background: var(--nav-hover-color);
   transition: all 0.6s ease-out;
 }
 
