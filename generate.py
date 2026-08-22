@@ -88,14 +88,14 @@ def generate_services_page():
         ],
         "website_development": [
             {
-                "title": "Portfolio website ",
+                "title": "Portfolio ",
                 "description": "A neat portfolio website for an individual or a business",
                 "price": "From 60$",
                 "duration": "2-7 days",
             },
             {
-                "title": "Finance/Ecommerce/Booking websites",
-                "description": " professional websites for financial services, e-commerce businesses, and booking-based platforms. I create secure, user-friendly experiences that help customers manage accounts, purchase products, schedule appointments, and complete transactions with ease.  ",
+                "title": "Advanced ",
+                "description": " Complex and professional websites for financial services, e-commerce businesses, and booking-based platforms. I create secure, user-friendly experiences that help customers manage accounts, purchase products, schedule appointments, and complete transactions with ease.  ",
                 "price": "From 200$",
                 "duration": "10-40 days",
             },
