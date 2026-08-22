@@ -77,12 +77,12 @@ def generate_services_page():
         "app_development": [
             {
                 "title": "Custom apps ",
-                "description": "I develop custom desktop applications designed around your specific business needs. From data management and automation tools to reporting systems and productivity software, I create reliable applications that improve efficiency and simplify your daily workflow.",
+                "description": "Desktop tools , dashboards , trackers , counters ....",
                 "price": "From 30$",
             },
             {
                 "title": "2D games",
-                "description": "I create engaging 2D games using Python, Pygame, and Arcade. From simple arcade-style games to more advanced projects, I build interactive gameplay, smooth controls, scoring systems, animations, and user-friendly interfaces.",
+                "description": "Simulations and 2D games using Python, Pygame, and Arcade ",
                 "price": "From 100$",
             },
         ],
@@ -95,13 +95,13 @@ def generate_services_page():
             },
             {
                 "title": "Advanced ",
-                "description": " Complex and professional websites for financial services, e-commerce businesses, and booking-based platforms. I create secure, user-friendly experiences that help customers manage accounts, purchase products, schedule appointments, and complete transactions with ease.  ",
+                "description": " Complex and professional websites for financial services, e-commerce businesses,  booking-based platforms ..etc ",
                 "price": "From 200$",
                 "duration": "10-40 days",
             },
             {
                 "title": "API integrations",
-                "description": "Seamlessly connect your website or application with third-party services using secure and reliable API integrations. From payment gateways and social media platforms to maps, booking systems, and custom business tools, I’ll ensure your systems communicate efficiently and deliver a smooth user experience. ",
+                "description": "Seamlessly connect your website or application with third-party services using secure and reliable API integrations.",
                 "price": "From 200$",
                 "duration": "10-40 days",
             },
