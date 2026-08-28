@@ -23,13 +23,12 @@
   --background-color:#252525; /* Background color for the entire website, including individual sections */
   --default-color: #f8f8f8; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #252525; /* Color for headings, subheadings and title throughout the website */
-  --accent-color:#11ab9e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color:#252525; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #121514; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #121514; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
+  --loading-fg:#fffa00;
+  --loading-bg:#252525;
+ 
   --nav-color: #478235;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffff00; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #3b3b3b; /* Used as the background color for mobile navigation menu */
@@ -735,30 +734,43 @@ font-family: 'Serbie', sans-serif !important;
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: var(--nav-hover-color);
+  background: var(--loading-bg);
   transition: all 0.6s ease-out;
+  color:var(--nav-hover-color);
+  text-align:center;
 }
-
+ 
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  border: 25px solid #ffffff;
+  border-color: var(--loading-fg) transparent var(--loading-fg) transparent;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+
+  width: 10px;
+  height: 10px;
   animation: animate-preloader 1.5s linear infinite;
 }
-
+ 
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
-  }
 
-  100% {
+  }
+ 
+  50%{
+    transform: rotate(-70deg);
+
+
+     
+  }
+  
+  100%{
+  
     transform: rotate(360deg);
+    
   }
 }
 
@@ -937,7 +949,7 @@ section,
   font-size: clamp(3.5rem, 1.9vw, 10.5rem) !important;
   font-family: 'Tourney', sans-serif !important;
 
-          color:#ffff00!important;
+          color:var(--nav-hover-color) !important;
           text-transform: uppercase !important;
           font-weight: bolder;
         }
@@ -985,6 +997,9 @@ section,
   max-width: 800px;
   width: 100%;
   background-color: rgba(20,20,20,0.8);
+  border:6px solid var(--nav-hover-color);
+  border-radius: 20px;
+  border-radius: 30px 30% 30px 30%;
 
 }
 
@@ -1026,7 +1041,7 @@ section,
   font-size: clamp(1.8rem, 1.4vw, 4rem);
   font-family: 'Maria', sans-serif !important;
 
-  color: #fdf325;
+  color: var(--nav-hover-color);
 }
 
 .blog-hero .blog-hero-content .meta span {
