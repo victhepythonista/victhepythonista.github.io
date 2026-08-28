@@ -938,7 +938,6 @@ section,
 
 
 .slider-icon{
-  font-size: clamp(5.5rem, 1.5vw, 10.5rem) !important;
 }
 .blog-hero {
   padding: 0;
@@ -956,7 +955,7 @@ section,
         .blog-hero-content h1,h2,h3,h4,h5{
   font-family: 'Pixelify Sans', sans-serif !important;
 
-          color:#eece13!important;
+          color:var(--nav-hover-color )!important;
         }
 .blog-hero .blog-hero-slider {
   position: relative;
@@ -992,14 +991,14 @@ section,
   transform: translate(-50%, -50%);
   z-index: 2;
   padding: 60px;
-  color: var(--contrast-color);
+  color: var(-nav-hover-color)!important;
   text-align: center;
   max-width: 800px;
   width: 100%;
   background-color: rgba(20,20,20,0.8);
-  border:6px solid var(--nav-hover-color);
+  border:8px solid var(--nav-hover-color);
   border-radius: 20px;
-  border-radius: 30px 30% 30px 30%;
+  border-radius:40px;
 
 }
 
@@ -4882,6 +4881,32 @@ section,
 .technology-button:hover{
     background-color: var(--tertiary-color);
     color: var(--tertiary-text-color) !important;
+
+
+}
+
+
+.slider-icon{
+  color: var(--nav-hover-color);
+  transition:all 2s ease-out;
+  animation:bouncy 1.5s linear infinite;
+  font-size: clamp(5.5rem, 1.5vw, 10.5rem);
+  
+
+}
+
+
+@keyframes bouncy{
+
+  0%{
+  transform:translateY(80px);
+
+  }
+
+  50%{
+  font-size: clamp(10.5rem, 2.5vw, 20.5rem)!important;
+
+  }
 
 }
 
