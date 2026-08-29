@@ -730,7 +730,7 @@ font-family: 'Serbie', sans-serif !important;
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
-  position: fixed;
+  position: static;
   inset: 0;
   z-index: 999999;
   overflow: hidden;
@@ -4932,5 +4932,5 @@ section,
 
 
 .coding-icon-container i{
-  font-size: clamp(4.6rem, 1.8vw, 15rem);
+  font-size: clamp(3.6rem, 1.8vw, 13rem);
 }

@@ -41,11 +41,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="item-card-title">{{project.title }}</div>
+				<div class="item-card-title p-1s">{{project.title }}</div>
 
 			</div>
 			<div class="container">
-				<p class="item-card-description">{{ project.short_description }}</p>
+				<p class="item-card-description font-pixelify ">{{ project.short_description }}</p>
 			</div>
 		</div>
 	</div>
@@ -62,19 +62,20 @@
       </div>
       <div class="modal-body">
       	<div class="container  p-5">
-      		<div class="container p-1">
-      			<div class="text-center fw-bold">Technologies used</div>
+      		<div class="row justify-content-center p-0">
+      			<div class="text-center col-6 fw-bold font-pixelify fs-4 text-white" style="border-radius:20px 20px 0px 0px;background-color:#252525;">Technologies used</div>
       		</div>
       		<div class="row sub-section justify-content-center">
 
       			{% for technology in project.technologies_used %}
-      				<div class="col-3 col-md-4 technology"> {{ technology }}</div>
+      				<div class="col-3 col-md-4 technology font-maria" style="background-color:#252525;"> {{ technology }}</div>
       			{% endfor %}
       		</div>
       	</div>
         <div class="container ">
         	<p> 
         		{{ project.short_description }}
+        		<hr>
         		{{ project.long_description }} 
         	</p>
         </div>
