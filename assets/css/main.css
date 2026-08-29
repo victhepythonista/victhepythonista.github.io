@@ -67,7 +67,7 @@ font-family: 'Dunkin Sans', sans-serif !important;
 
 .font-biscuit-tin{
 
-                                                                    font-family: 'biscuit tin', sans-serif !important;
+font-family: 'biscuit tin', sans-serif !important;
                                                 
 
 }
@@ -730,9 +730,10 @@ font-family: 'Serbie', sans-serif !important;
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
-  position: static;
+  position: fixed;
   inset: 0;
   z-index: 999999;
+  height:100%;
   overflow: hidden;
   background: var(--loading-bg);
   transition: all 0.6s ease-out;
