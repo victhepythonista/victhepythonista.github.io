@@ -142,10 +142,30 @@
 	.grid-post h3 , h4 , h5{
 		color: #0c0e2f;
 	}
+
+
+  .article-title{
+  width: 20ch; /* SHORTCUT: 18ch equals exactly 18 characters wide */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 6s steps(20) infinite; /* Matches character count exactly */
+  display: flex;
+  transition:all ease-in-out;
+  text-align: center;
+  padding-left:5ch;
+}
+
+@keyframes type {
+  from { width: 0; }
+}
+
+@keyframes pulse {  0%, 100% {      color: white; /* Initial color */  }  20% {       color: var(--nav-hover-color); /* Color at midpoint */  }}
+.pulse-text {  animation: pulse 3s infinite; /* Adjust duration as needed */}
+
 </style>
 
-	<div class="text-center container p-3 fs-1 font-biscuit-tin">
-	SKILLS :
+	<div class="text-center container p-3 fs-1 font-biscuit-tin ">
+	SKILLSET 
 	</div>
  
 	    <div class="posts-grid"  >
@@ -166,40 +186,40 @@
                   <div class="col-md-6 p-4" >
               <article class="grid-post"  >
                
-               <h2 class="font-maria fw-bolder text-uppercase text-center fs-1">backend</h2>
+               <h2 class="font-maria fw-bolder article-title text-uppercase text-center fs-1">backend</h2>
                <div class="container">
                	<div class="row">
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Python
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	SQL
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Django
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Bash
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	C
               		</div>
@@ -225,40 +245,40 @@
                   <div class="col-md-6 p-4" >
               <article class="grid-post"  >
                
-               <h2 class="font-maria fw-bolder text-uppercase text-center fs-1">frontend</h2>
+               <h2 class="font-maria fw-bolder article-title text-uppercase text-center fs-1">frontend</h2>
                <div class="container">
                	<div class="row">
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Javascript
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	HTML
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	CSS
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Jquery
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Bootstrap
               		</div>
@@ -284,33 +304,33 @@
                   <div class="col-md-6 p-4" >
               <article class="grid-post"  >
                
-               <h2 class="font-maria fw-bolder text-uppercase text-center fs-1">cloud</h2>
+               <h2 class="font-maria fw-bolder article-title text-uppercase text-center fs-1">cloud</h2>
                <div class="container">
                	<div class="row">
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	AWS s3 storage
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Cloudinary
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Koyeb hosting configs
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Docker
               		</div>
@@ -336,26 +356,26 @@
                   <div class="col-md-6 p-4" >
               <article class="grid-post"  >
                
-               <h2 class="font-maria fw-bolder text-uppercase text-center fs-1">Web scraping</h2>
+               <h2 class="font-maria fw-bolder article-title text-uppercase text-center fs-1">Web scraping</h2>
                <div class="container">
                	<div class="row">
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Selenium
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Playwright
               		</div>
               </div>
               
               	<div class="col-6 col-lg-4 p-1  font-maria ">
-              		<div class="skill-box text-uppercase font-pixelify">
+              		<div class="skill-box text-uppercase font-pixelify pulse-text">
               			
               	Requests
               		</div>
@@ -419,7 +439,6 @@
   <!-- Preloader -->
   <div id="preloader">
     
-    Loading
   </div>
 
   <!-- Vendor JS Files -->
