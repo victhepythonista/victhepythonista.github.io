@@ -8,7 +8,8 @@ skills = {
     "backend": ["Python", "SQL", "Django", "Bash", "C"],
     "frontend": ["Javascript", "HTML", "CSS", "Jquery", "Bootstrap"],
     "cloud": ["AWS s3 storage", "Cloudinary", "Koyeb hosting configs", "Docker"],
-    "Web scraping": ["Selenium", "Playwright", "Requests"],
+    "Web scraping": ["Selenium", "Playwright", "Requests", "bs4"],
+    "2D games": ["Pygame", "Pymunk"],
 }
 
 contact_information = {
