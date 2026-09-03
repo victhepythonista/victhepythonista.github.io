@@ -49,6 +49,21 @@ table tr:last-child td:last-child {
 	.grid-post h3 , h4 , h5{
 		color: #0c0e2f !important;
 	}
+
+    .service-title{
+  width: 20ch; /* SHORTCUT: 18ch equals exactly 18 characters wide */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 6s steps(20) infinite; /* Matches character count exactly */
+  display: flex;
+  transition:all ease-in-out;
+  text-align: center;
+  padding-left:5ch;
+}
+
+@keyframes type {
+  from { width: 0; }
+}
 </style>
 
 	<div class="text-center container p-3 fs-1 font-biscuit-tin">
@@ -64,7 +79,7 @@ table tr:last-child td:last-child {
             <div class="col-md-6 p-4"  >
               <article class="grid-post"  >
                
-               <h2 class="font-dasher  fs-1  text-center">WEBSITE DEVELOPMENT</h2>
+               <h2 class="font-dasher  fs-1  text-center service-title">WEBSITES</h2>
                <h4 class="font-dunkin"> </h4>
                
 
@@ -77,7 +92,6 @@ table tr:last-child td:last-child {
           <td>{{service.title}}</td>
           <td>{{service.description}}</td>
           <td>{{service.duration}}</td>
-          <td>{{service.price}}</td>
         </tr>
 
 {% endfor %}
@@ -100,7 +114,7 @@ table tr:last-child td:last-child {
                   <div class="col-md-6 p-4"  >
               <article class="grid-post"  >
                
-               <h2 class="font-dasher text-center fs-1">APPS</h2>
+               <h2 class="font-dasher text-center service-title fs-1">APPS</h2>
                <h5 class="font-maria">Practical and user-friendly applications  tailored to your specific needs.</h5>
                
 
@@ -135,7 +149,7 @@ table tr:last-child td:last-child {
                   <div class="col-md-6 p-4"  >
               <article class="grid-post"  >
                
-               <h2 class="font-dasher text-center fs-1">WEB SCRAPING</h2>
+               <h2 class="font-dasher text-center fs-1 service-title">WEB SCRAPING</h2>
                <h4 class="font-maria">Need data from the internet ? Do you want it stored, converted, routed elsewhere or visualized? I got you !</h4>
                <h5 class="font-maria">I am experienced in making efficient  un-blockable web crawlers built with user-friendliness in mind</h5>
                
@@ -150,7 +164,7 @@ table tr:last-child td:last-child {
                   <div class="col-md-6 p-4"  >
               <article class="grid-post"  >
                
-               <h2 class="font-dasher text-center fs-1">GRAPHICS</h2>
+               <h2 class="font-dasher text-center fs-1 service-title">GRAPHICS</h2>
                <h4 class="font-maria">Banners, brochures, flyers, invitations, logos and promotional materials. Expect clean designs, strong visual layouts, and branding that helps your business communicate effectively and stand out.</h4>
                
 
@@ -164,7 +178,7 @@ table tr:last-child td:last-child {
                   <div class="col-md-6 p-4"  >
               <article class="grid-post"  >
                
-               <h2 class="font-dasher text-center fs-1">DEBUGGING</h2>
+               <h2 class="font-dasher text-center fs-1 service-title">DEBUGGING</h2>
                <h4 class="font-maria">Finding bugs, testing , vulnerability checks, validating user interactions,  checking compatibility .....   
  
                 </h4>

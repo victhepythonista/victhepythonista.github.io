@@ -53,7 +53,7 @@ def generate_index_page():
     env = Environment(loader=FileSystemLoader("./"))
     template = env.get_template("index.jinja")
     context = {
-        "bio": "I specialize in full stack website development , web scraping , data visualization , 2D games and custom desktop applications. ",
+        "bio": "I specialize in full stack website development , web scraping ,  custom desktop applications , data visualization , graphics design , pixel art and  2D games. ",
     } | base_context
     with open("index.html", "w") as f:
         f.write(template.render(context))
@@ -88,21 +88,18 @@ def generate_services_page():
         ],
         "website_development": [
             {
-                "title": "Portfolio ",
+                "title": "Portfolio <br> (from 15$)",
                 "description": "A neat portfolio website for an individual or a business",
-                "price": "From 60$",
                 "duration": "2-7 days",
             },
             {
-                "title": "Advanced ",
+                "title": "Advanced <br> (from 200$)",
                 "description": " Complex and professional websites for financial services, e-commerce businesses,  booking-based platforms ..etc ",
-                "price": "From 200$",
                 "duration": "10-40 days",
             },
             {
-                "title": "API integrations",
+                "title": "API integrations <br>  (from 80$)",
                 "description": "Seamlessly connect your website or application with third-party services ",
-                "price": "From 80$",
                 "duration": "2-20 days",
             },
         ],
